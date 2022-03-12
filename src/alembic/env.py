@@ -1,3 +1,10 @@
+# Due to bad module typing we need to disable certain type checker rules for strict mode.
+# This file is tested and does work, and should not be changed.
+
+# pyright: reportUnknownMemberType=false
+# pyright: reportUnknownVariableType=false
+# pyright: reportUnknownArgumentType=false
+
 from logging.config import fileConfig
 from os import environ
 
